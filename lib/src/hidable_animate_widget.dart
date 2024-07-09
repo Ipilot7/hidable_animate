@@ -53,7 +53,12 @@ class _HidableAnimateState extends State<HidableAnimate> {
         return AnimatedContainer(
             duration: const Duration(milliseconds: 300),
             height: value ? widget.preferredWidgetSize.height : 0.0,
-            child: widget.child);
+            child: ListView(
+              physics: const NeverScrollableScrollPhysics(),
+              children: [
+                widget.child,
+              ],
+            ));
       },
       valueListenable: _isVisible,
     );
