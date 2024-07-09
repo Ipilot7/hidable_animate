@@ -15,8 +15,7 @@ class HidableAnimate extends StatefulWidget implements PreferredSizeWidget {
 
   @override
   State<HidableAnimate> createState() => _HidableAnimateState();
-  
-  
+
   @override
   Size get preferredSize => preferredWidgetSize;
 }
@@ -50,7 +49,7 @@ class _HidableAnimateState extends State<HidableAnimate> {
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder(
-      builder: (context, value, child) {
+      builder: (context, bool value, child) {
         return AnimatedContainer(
             duration: const Duration(milliseconds: 300),
             height: value ? widget.preferredWidgetSize.height : 0.0,
