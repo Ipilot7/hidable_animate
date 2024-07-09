@@ -31,4 +31,4 @@ HidableAnimate(
 ),
 ```
 
-**That is the common usage of hidable_animate, and also you can find full code implmenetation of hidable_animate at** [official example page](https://github.com/Ipilot7/hidable_animate/example/main.dart).
+**That is the common usage of hidable_animate, and also you can find full code implmenetation of hidable_animate at** [official example page](https://github.com/Ipilot7/hidable_animate/blob/dev/example/main.dart).
